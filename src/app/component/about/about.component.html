@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <ul class="list-group mt-4">
+                <li class="list-group-item" *ngFor="let e of even$ | async">
+                    Even Number: {{e}}
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-md-4">
+            <ul class="list-group mt-4">
+                <li class="list-group-item" *ngFor="let odd of oddNo$ | async">
+                    Odd Number: {{odd}}
+                </li>
+            </ul>
+        </div>
+
+        <!-- <div class="col-md-4">
+            <ul class="list-group mt-4">
+                <li class="list-group-item" *ngFor="let num of num$ | async">
+                    Calculated Even Number: {{num}}
+                </li>
+            </ul>
+        </div> -->
+    </div>
+</div>
